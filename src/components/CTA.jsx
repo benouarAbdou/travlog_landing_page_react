@@ -14,7 +14,7 @@ const CTA = () => {
         Prepare yourself & let’s explore the beauty of the world
       </h2>
 
-      <div className="flex items-center gap-4">
+      <div className="flex items-center  md:flex-row flex-col gap-4">
         <div className="relative flex items-center">
           <img
             src={mail} // Replace with your image path
