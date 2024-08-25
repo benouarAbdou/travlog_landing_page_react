@@ -24,6 +24,8 @@ import tripadvisor from "./tripadvisor.png";
 import twitter from "./twitter.svg";
 import weather from "./weather.png";
 import work_icon from "./work_icon.svg";
+import menu from "./menu.svg";
+import close from "./close.svg";
 
 export {
     airbnb,
@@ -51,5 +53,7 @@ export {
     tripadvisor,
     twitter,
     weather,
-    work_icon
+    work_icon,
+    menu,
+    close,
 };
