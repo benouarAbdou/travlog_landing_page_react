@@ -1,13 +1,13 @@
-import { airbnb } from "./assets";
+import React from "react";
+import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
 
 function App() {
   return (
-    <>
-      <h1 className="text-3xl font-bold underline text-red-500">
-        Hello world!
-      </h1>
-      <img src={airbnb} alt="" />
-    </>
+    <div className="w-full overflow-hidden">
+      <Navbar />
+      <Hero />
+    </div>
   );
 }
 

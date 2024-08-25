@@ -1,4 +1,4 @@
-import { location,calendar,coupon,airbnb,booking_com,expedia,tripadvisor,orbitz } from "../assets";
+import { location,calendar,coupon,airbnb,booking_com,expedia,tripadvisor,orbitz ,instagram, facebook,twitter} from "../assets";
 
 export const navLinks = [
     {
