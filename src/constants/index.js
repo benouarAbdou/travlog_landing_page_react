@@ -106,6 +106,7 @@ export const navLinks = [
       id: "feature-1",
       icon: location,
       title: "We offer best services",
+      color: "bg-tertiary",
       content:
         "Lorem Ipsum is not simply random text.",
     },
@@ -113,6 +114,7 @@ export const navLinks = [
       id: "feature-2",
       icon: calendar,
       title: "Schedule your trip",
+      color: "bg-yellow-400",
       content:
         "Lorem Ipsum is not simply random text.",
     },
@@ -120,6 +122,7 @@ export const navLinks = [
       id: "feature-3",
       icon: coupon,
       title: "Get discounted coupons",
+      color: "bg-secondary",
       content:
         "Lorem Ipsum is not simply random text.",
     },

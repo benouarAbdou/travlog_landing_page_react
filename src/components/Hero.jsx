@@ -12,23 +12,24 @@ const Hero = () => (
 
     {/* Left side */}
     <div className={`flex flex-1 flex-col justify-start items-start`}>
-      <div className="rounded-[40px] flex justify-center gap-2 items-center bg-white py-3 px-6 z-10">
+      <div className="rounded-[40px] flex justify-center gap-2 items-center bg-white py-3 px-6 z-10 my-4">
         <p className="text-secondary font-poppins font-semibold">
           Explore the world!
         </p>
         <img src={work_icon} alt="" className="w-[24px] h-[24px]" />
       </div>
-      <h1 className="font-poppins font-semibold ss:text-[72px] text-[52px] mt-4 leading-[80px] ">
+      <h1 className="font-poppins font-semibold ss:text-[84px] text-[52px] mt-4 leading-[100px] ">
         Travel{" "}
         <span className="text-secondary font-semibold">top destination of</span>{" "}
         the world
       </h1>
       <p className={`${styles.paragraph} mt-4`}>
-        We always make our customer happy by providing as many choices as
-        possible
+        We always make our customer happy by providing{" "}
+        <br className="sm:block hidden" />
+        as many choices as possible
       </p>
 
-      <div className="flex gap-8 mt-4 items-center cursor-pointer mb-4">
+      <div className="flex gap-8  items-center cursor-pointer my-8">
         <MainButton text={"Get Started"} />
         <div className=" flex gap-2">
           <img src={play} alt="" className="w-[24px] h-[24px]" />
