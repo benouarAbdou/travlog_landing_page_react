@@ -24,6 +24,9 @@ export default {
       lg: "1200px",
       xl: "1700px",
     },
+    backgroundImage: {
+      'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+    }
   },
   plugins: [],
 }

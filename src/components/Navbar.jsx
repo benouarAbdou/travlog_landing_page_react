@@ -2,6 +2,7 @@ import React from "react";
 import { travlog } from "../assets"; // Make sure the path is correct
 import { navLinks } from "../constants";
 import styles from "../styles";
+import MainButton from "./MainButton";
 
 const Navbar = () => {
   return (
@@ -27,12 +28,7 @@ const Navbar = () => {
         <a href="#" className="font-poppins font-bold">
           Login
         </a>
-        <button
-          type="button"
-          className="px-6 py-3 bg-primary font-poppins  font-medium  text-white outline-none rounded-[30px]"
-        >
-          Sign up
-        </button>
+        <MainButton text={"Sign Up"} />
       </div>
     </nav>
   );
