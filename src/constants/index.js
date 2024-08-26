@@ -1,4 +1,4 @@
-import {people01, people02, people03, location,calendar,coupon,airbnb,booking_com,expedia,tripadvisor,orbitz ,instagram, facebook,twitter} from "../assets";
+import {globe,weather,booking,destination1,destination2,destination3,people01, people02, people03, location,calendar,coupon,airbnb,booking_com,expedia,tripadvisor,orbitz ,instagram, facebook,twitter} from "../assets";
 
 export const navLinks = [
     {
@@ -176,3 +176,60 @@ export const navLinks = [
       img: people03,
     },
   ];
+
+export const destinations = [
+  {
+    id:"d1",
+    img:destination1,
+    title:"Paradise Beach, Bantayan Island",
+    price:"$550.16",
+    place:"Rome, Italy",
+    rating:"4.8",
+  },
+  {
+    id:"d2",
+    img:destination2,
+    title:"Ocean with full of Colors",
+    price:"$20.99",
+    place:"Maldives",
+    rating:"4.5",
+  },
+  {
+    id:"d3",
+    img:destination3,
+    title:"Mountain View, Above the cloud",
+    price:"$150.99",
+    place:"United Arab Emeries ",
+    rating:"5.0",
+  },
+  {
+    id:"d4",
+    img:destination2,
+    title:"hsdhsfffshfhsfhsfhs",
+    price:"$20.99",
+    place:"Maldives",
+    rating:"4.5",
+  },
+  
+]
+export const services = [
+  {
+    id:"s1",
+    title:"Best Tour Guide",
+    content:"What looked like a small patch of purple grass, above five feet.",
+    img:globe,
+  },
+  {
+    id:"s2",
+    title:"Easy Booking",
+    content:"Square, was moving across the sand in their direction.",
+    img:booking,
+  },
+  {
+    id:"s3",
+    title:"Weather Forecast",
+    content:"What looked like a small patch of purple grass, above five feet.",
+    img:weather,
+  },
+  
+]
