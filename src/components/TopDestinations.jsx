@@ -1,52 +1,57 @@
-import React, { useState, useEffect } from "react";
+import { useRef } from "react";
 import { ArrowRightIcon, ArrowLeftIcon } from "@heroicons/react/16/solid";
 import styles from "../styles";
 import DestinationCard from "./DestinationCard";
 import { destinations } from "../constants";
+import Slider from "react-slick";
+// Import CSS for react-slick
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const TopDestinations = () => {
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const [visibleCards, setVisibleCards] = useState(3);
+  const sliderRef = useRef(null);
 
-  // Adjust the number of visible cards based on screen width
-  useEffect(() => {
-    const updateVisibleCards = () => {
-      const width = window.innerWidth;
-      if (width >= 1024) {
-        setVisibleCards(3);
-      } else if (width >= 768) {
-        setVisibleCards(2);
-      } else {
-        setVisibleCards(1);
+  const settings = {
+    dots: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    swipeToSlide: true,
+    centerMode: true, // Center slides when less than max number shown
+    centerPadding: "0px", // No padding around centered slides
+    responsive: [
+      {
+        breakpoint: 1400, // Large screens
+        settings: {
+          slidesToShow: 2,
+          centerMode: true
+        }
+      },
+      {
+        breakpoint: 768, // Medium screens
+        settings: {
+          slidesToShow: 1,
+          centerMode: true
+        }
+      },
+      {
+        breakpoint: 480, // Small screens
+        settings: {
+          slidesToShow: 1,
+          centerMode: true
+        }
       }
-    };
-
-    updateVisibleCards();
-    window.addEventListener("resize", updateVisibleCards);
-    return () => window.removeEventListener("resize", updateVisibleCards);
-  }, []);
-
-  const handleNext = () => {
-    setCurrentIndex(
-      (prevIndex) => (prevIndex + visibleCards) % destinations.length
-    );
+    ]
   };
 
   const handlePrev = () => {
-    setCurrentIndex(
-      (prevIndex) =>
-        (prevIndex - visibleCards + destinations.length) % destinations.length
-    );
+    sliderRef.current.slickPrev();
   };
 
-  const visibleDestinations = destinations
-    .slice(currentIndex, currentIndex + visibleCards)
-    .concat(
-      destinations.slice(
-        0,
-        Math.max(0, currentIndex + visibleCards - destinations.length)
-      )
-    );
+  const handleNext = () => {
+    sliderRef.current.slickNext();
+  };
 
   return (
     <section
@@ -79,16 +84,14 @@ const TopDestinations = () => {
           </button>
         </div>
       </div>
-      <div className="flex flex-wrap justify-center items-center gap-8 overflow-hidden">
-        {visibleDestinations.map((destination, index) => (
-          <div
-            key={index}
-            className="transition-transform duration-500"
-            style={{ minWidth: "350px", maxWidth: "100%" }}
-          >
-            <DestinationCard destination={destination} />
-          </div>
-        ))}
+      <div>
+        <Slider ref={sliderRef} {...settings}>
+          {destinations.map((destination) => (
+            <div key={destination.id} className="px-8">
+              <DestinationCard destination={destination} />
+            </div>
+          ))}
+        </Slider>
       </div>
     </section>
   );

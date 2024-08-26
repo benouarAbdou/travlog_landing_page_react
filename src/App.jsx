@@ -16,6 +16,7 @@ function App() {
       <Hero />
       <Companies />
       <Services />
+      <TopDestinations />
       <TravelPoint />
       <KeyFeatures />
       <Testimonial />
