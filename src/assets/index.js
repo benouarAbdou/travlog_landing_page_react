@@ -26,6 +26,9 @@ import weather from "./weather.png";
 import work_icon from "./work_icon.svg";
 import menu from "./menu.svg";
 import close from "./close.svg";
+import people01 from "./people01.png";
+import people02 from "./people02.png";
+import people03 from "./people03.png";
 
 export {
     airbnb,
@@ -56,4 +59,7 @@ export {
     work_icon,
     menu,
     close,
+    people01,
+    people02,
+    people03,
 };

@@ -6,6 +6,7 @@ import TravelPoint from "./components/TravelPoint";
 import KeyFeatures from "./components/KeyFeatures";
 import CTA from "./components/CTA";
 import Footer from "./components/Footer";
+import Testimonial from "./components/Testimonials";
 function App() {
   return (
     <div className="w-full overflow-hidden">
@@ -14,6 +15,7 @@ function App() {
       <Companies />
       <TravelPoint />
       <KeyFeatures />
+      <Testimonial />
       <CTA />
       <Footer />
     </div>
