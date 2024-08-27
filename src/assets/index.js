@@ -29,6 +29,9 @@ import close from "./close.svg";
 import people01 from "./people01.png";
 import people02 from "./people02.png";
 import people03 from "./people03.png";
+import coupon_circle from "./coupon_circle.svg";
+import triangles from "./triangles.svg";
+import waves from "./waves.svg";
 
 export {
     airbnb,
@@ -62,4 +65,7 @@ export {
     people01,
     people02,
     people03,
+    coupon_circle,
+    triangles,
+    waves,
 };

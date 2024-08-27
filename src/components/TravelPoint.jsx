@@ -5,6 +5,7 @@ import StatBox from "./StatBox";
 
 const TravelPoint = () => (
   <section
+    id="special deals"
     className={`flex md:flex-row flex-col ${styles.paddingY} ${styles.paddingX}`}
   >
     <div className="flex-1 flex">

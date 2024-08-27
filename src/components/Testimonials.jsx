@@ -31,7 +31,7 @@ const Testimonial = () => {
       <div className="relative">
         <button
           onClick={handlePrev}
-          className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-white hover:shadow-md rounded-full p-4"
+          className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-white hover:shadow-md rounded-full  md:p-4 p-2"
           aria-label="Previous Testimonial"
         >
           <ArrowLeftIcon className="w-6 h-6" />
@@ -63,10 +63,10 @@ const Testimonial = () => {
 
         <button
           onClick={handleNext}
-          className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-white hover:shadow-md rounded-full p-4"
+          className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-primary hover:shadow-md rounded-full md:p-4 p-2"
           aria-label="Next Testimonial"
         >
-          <ArrowRightIcon className="w-6 h-6" />
+          <ArrowRightIcon className="w-6 h-6 text-white" />
         </button>
       </div>
 

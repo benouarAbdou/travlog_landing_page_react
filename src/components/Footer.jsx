@@ -1,12 +1,15 @@
 import styles from "../styles";
 import { footerLinks, socialMedia } from "../constants";
 import { travlog } from "../assets";
-
+import { waves } from "../assets";
 const Footer = () => {
   return (
     <section
-      className={`flex md:flex-row flex-col ${styles.paddingY} ${styles.paddingX}`}
+      className={`relative flex md:flex-row flex-col ${styles.paddingY} ${styles.paddingX}`}
     >
+      <div className="absolute -top-40 right-0 -z-10">
+        <img src={waves} alt="waves_decoration" className="w-[100%] h-[100%]" />
+      </div>
       <div className={`${styles.flexStart} md:flex-row flex-col mb-8 w-full`}>
         <div className=" flex-1 flex flex-col justify-start mr-10">
           <img

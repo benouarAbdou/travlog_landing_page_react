@@ -5,6 +5,7 @@ import { mail } from "../assets";
 const CTA = () => {
   return (
     <section
+      id="contact"
       className={`flex flex-col justify-center items-center rounded-[20px] ${styles.paddingY} ${styles.paddingX} ${styles.marginX} ${styles.marginY} bg-yellow-50`}
     >
       <h4 className="text-secondary font-poppins text-center uppercase font-semibold text-2xl mb-4">

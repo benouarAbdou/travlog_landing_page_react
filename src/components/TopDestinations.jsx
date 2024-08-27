@@ -55,6 +55,7 @@ const TopDestinations = () => {
 
   return (
     <section
+      id="discover"
       className={`flex flex-col gap-4 ${styles.paddingY} ${styles.paddingX}`}
     >
       <div className="flex flex-row justify-between items-center">
@@ -77,10 +78,10 @@ const TopDestinations = () => {
           </button>
           <button
             onClick={handleNext}
-            className="cursor-pointer bg-white hover:shadow-md rounded-full p-4 z-10"
+            className="cursor-pointer bg-primary hover:shadow-md rounded-full p-4 z-10"
             aria-label="Next Destination"
           >
-            <ArrowRightIcon className="w-6 h-6" />
+            <ArrowRightIcon className="w-6 h-6 text-white" />
           </button>
         </div>
       </div>
